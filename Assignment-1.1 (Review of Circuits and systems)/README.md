@@ -1,4 +1,4 @@
-# Electricity and Electronics – Overview
+# Assignment-1 (Circuits and Systems)
 ## Question 1 -7
 ![Page 1](1.%20Review/page_1.jpeg)
 ![Page 2](1.%20Review/page_2.jpeg)
