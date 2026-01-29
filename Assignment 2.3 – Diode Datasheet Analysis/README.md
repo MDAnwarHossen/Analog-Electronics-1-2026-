@@ -6,7 +6,7 @@
 ## Manufacturer
 Vishay Semiconductor (also manufactured by Nexperia and others)
 
-## Real application (explained)
+## Real application
 The 1N4148 is commonly used in **high‑speed signal switching and protection** circuits. Its internal construction results in low junction capacitance and fast reverse recovery, which allows it to respond quickly to changing voltages without significantly distorting digital or pulse signals. Typical uses include logic‑level signal steering, diode‑OR gates, clamping negative transients on microcontroller inputs, and pulse shaping in timing circuits.
 
 ---
@@ -17,7 +17,7 @@ https://www.vishay.com/docs/81857/1n4148.pdf
 
 ---
 
-## Technical explanation (no copy‑paste)
+## Technical explanation
 
 ### Forward voltage (VF)
 The forward voltage is the voltage drop that appears across the diode when current flows through it. For the 1N4148, when a small signal current on the order of **10 mA** flows, the diode drops roughly **0.7–1.0 V**. This drop is important because it determines how much voltage remains for other components (such as series resistors or logic inputs). Designers should always assume the higher end of this range to ensure the circuit still works under worst‑case conditions and elevated temperatures.
