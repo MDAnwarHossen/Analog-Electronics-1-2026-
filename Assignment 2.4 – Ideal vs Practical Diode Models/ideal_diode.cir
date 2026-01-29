@@ -1,0 +1,10 @@
+* ideal_diode.cir - LTspice-compatible netlist (ideal diode approximated by voltage-controlled switch)
+* Circuit: Vin -> ideal diode -> Rload -> 0
+V1 in 0 DC 0
+Bctrl ctrl 0 V=V(in,0)
+S1 in out ctrl 0 SWmod
+Rload out 0 1k
+.model SWmod SW(Ron=1m Roff=1G Vt=0 Vh=1e-6)
+.dc V1 -1 1 0.01
+.print dc i(V1) v(in,0) i(S1)
+.end

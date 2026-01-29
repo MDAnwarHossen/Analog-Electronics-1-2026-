@@ -1,0 +1,9 @@
+* real_diode.cir - LTspice-compatible netlist (1N4148-like SPICE model)
+* Circuit: Vin -> D1 -> Rload -> 0
+V1 in 0 DC 0
+D1 in out Dmodel
+Rload out 0 1k
+.dc V1 -1 1 0.01
+.print dc i(V1) v(in,0) i(D1)
+.model Dmodel D(IS=2.52e-9 N=1.75 RS=0.5 BV=100 IBV=1e-3 CJO=2e-12 M=0.333)
+.end
